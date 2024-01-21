@@ -24,6 +24,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    color: #1d1d1b;
+    letter-spacing: -.02em;
+    font-family: Editorial New,sans-serif;
+    /* font-size: 2.15vw; */
+    font-weight: 300;
+    /* line-height: 2.5vw */
+}
 #main{
     width:100%;
     height:100%;
@@ -39,27 +47,56 @@
 
 #nav{
     /* background-color: blueviolet; */
-    text-align: center;
+    /* text-align: center; */
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:100%;
     height:12vh;
-    padding: 5px 20px;
+    padding: 0 2vw;
     border-bottom: 1px solid black;
+}
+.nav-item-div{
+   
+    height:100%;
+    display:flex;
+    /* border:1px solid black; */
+    align-items: center;
+}
+#logo-div{
+    width:15%;
+}
+#page-title-div{
+    justify-content: center;
+    width:60%;
+}
+#menu-icon-div{
+    justify-content: flex-end;
+    width:15%;
 }
 #nav h5{
     font-family: editorial,sans-serif;
-    color:#353431;
+    color:#796420;
     font-size: medium;
 }
 #nav h4{
     font-size: xx-large;
     font-family: chomsky;
     font-weight: lighter;
+   
 }
 #nav i{
     font-size: x-large;
+}
+
+/* ------------------------------------------navbar responsiveness section--------------------------- */
+
+@media(max-width:769px){
+    #nav h5{
+        display:none;
+        
+    }
+
 }
 
 /* ---------------------------------------------element section-------------------------------------- */
@@ -70,8 +107,9 @@
     width:100%;
     height:50vh;
     /* background-color: blue; */
-    border:1px solid black;
-    padding: 20px 50px;
+    /* border:1px solid black; */
+    padding: 10px 50px;
+    margin: 20px 0;
     overflow: hidden;
 }
 #elem-1{
@@ -97,17 +135,19 @@
 #elem-1 h5, #elem-3 h5{
     margin-top: 10px;
     font-family: canopee;
+    font-size: 1.3rem;
 }
 #elem-1 h5 span,#elem-3 h5 span{
     color:#C3BBB2;
     background-color:#B93C12;
-    padding:1px 5px;
+    padding:1px 8px;
     border-radius: 3px;
     margin-left: 2px;;
 }
 #elem-1 p, #elem-3 p{
     margin-top: 10px;
     font-family: Alegreya;
+    font-size: 1rem;
 }
 #elem-2{
     width:30%;
