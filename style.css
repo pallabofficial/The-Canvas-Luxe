@@ -40,7 +40,7 @@ body{
 }
 #page-1{
     width:100%;
-    /* height:100vh; */
+    
 }
 
 /* ----------------------------------------------navbar section------------------- */
@@ -48,11 +48,12 @@ body{
 #nav{
     /* background-color: blueviolet; */
     /* text-align: center; */
+    
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:100%;
-    height:12vh;
+    aspect-ratio: 16/1.2;
     padding: 0 2vw;
     border-bottom: 1px solid black;
 }
@@ -69,18 +70,32 @@ body{
 #page-title-div{
     justify-content: center;
     width:60%;
+    height: 80%;
 }
 #menu-icon-div{
     justify-content: flex-end;
     width:15%;
+    
+
+
 }
-#nav h5{
+/* #menu-icon{
+    font-size: 100vw;;
+    width:40%; 
+     height:70%;
+} */
+#logo{
     font-family: editorial,sans-serif;
     color:#796420;
-    font-size: medium;
+    font-size: 1.3vw;
 }
-#nav h4{
-    font-size: xx-large;
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    height:80%;
+    font-size: 5vw;
     font-family: chomsky;
     font-weight: lighter;
    
@@ -91,21 +106,29 @@ body{
 
 /* ------------------------------------------navbar responsiveness section--------------------------- */
 @media(max-width:480px){ /* small screens*/
-    #nav h5{
+    #nav{
+        aspect-ratio: 16/2;
+    }
+    
+    #logo{
         display:none;
         
     }
-    #nav h4{
-        font-size: 1.5rem;
+    #title{
+        font-size: 6vw;
     }
 
 }
 @media(min-width:481px) and (max-width:768px){ /* medium screens*/
-    #nav h5{
+    #nav{
+        aspect-ratio: 16/1.5;
+    }
+    
+    #logo{
         display:none;
         
     }
-    #nav h4{
+    #title{
         font-size: 2rem;
     }
 
@@ -113,12 +136,9 @@ body{
 
 
 @media(min-width:769px){ /* big screens*/
-    #nav h5{
-        
-        
-    }
-    #nav h4{
-        font-size: xx-large;
+   
+    #title{
+        font-size: 3vw;
     }
 
 }
@@ -138,7 +158,7 @@ body{
     overflow: hidden;
 }
 #elem-1, #elem-2, #elem-3{
-    border:1px solid black;
+    /* border:1px solid black; */
     width:30%;
     height:100%;
 }
@@ -147,7 +167,7 @@ body{
     width:100%;
     height:50%
 }
-#elem-1-img-div img, #elem-3-img-div img{
+.elem-img{
     width:100%;
     height:100%;
     object-fit: cover;
@@ -157,22 +177,22 @@ body{
 #elem-1-img-div:hover img, #elem-3-img-div:hover img{
     scale:1.1;
 }
-#elem-1 h5, #elem-3 h5{
+#elem-1-title, #elem-3-title{
     margin-top: 10px;
     font-family: canopee;
-    font-size: 1.3rem;
+    font-size: 1.5vw;
 }
-#elem-1 h5 span,#elem-3 h5 span{
+#elem-1-title span,#elem-3 span{
     color:#C3BBB2;
     background-color:#B93C12;
     padding:1px 8px;
     border-radius: 3px;
     margin-left: 2px;;
 }
-#elem-1 p, #elem-3 p{
+#elem-1-desc, #elem-3-desc{
     margin-top: 10px;
     font-family: Alegreya;
-    font-size: 1rem;
+    font-size: 1.5vw;
 }
 #elem-2{
     border-left: 1px solid black;
@@ -185,21 +205,29 @@ body{
 }
 #elem-2-h1-div{
     width:95%;
-    height:25%;
+    aspect-ratio: 16/3.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#elem-2 h1{
+#elem-2-title{
     width:95%;
+    height: 100%;
     margin:0 auto;
-    font-size: 3rem;
+    font-size: 5vw;
     font-family:canopee ;
 }
 #elem-2-h3-div{
     width: 70%;
     height:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-#elem-2 h3{
-    margin-top: 10px;;
-    font-size: 1.2rem;
+#elem-2-desc{
+ 
+    font-size: 2.5vw;
     font-weight: lighter;
     font-family: Alegreya;
     
@@ -207,9 +235,13 @@ body{
 #elem-2-p-div{
     font-size: 1rem;
     height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#elem-2 p{
-    margin-top: 15px;
+#elem-2-scroll-msg{
+ 
+    font-size: 1.3vw;
     font-family: Alegreya;
     
 }
@@ -219,8 +251,9 @@ body{
 
 @media(max-width:480px){  /*for small screen devices (mobile phones) */
     #elems{
+        /* border:1px solid black; */
         width: 95%;
-        aspect-ratio: 4/4;
+        aspect-ratio: 4/2.5;
         margin: 20px auto;
     }
     #elem-1,#elem-3{
@@ -230,8 +263,20 @@ body{
         width: 95%;
         margin: 0 auto;
     }
-    #elem-2 h1{
-        font-size: 5rem;
+    #elem-2-title{
+        width:95%;
+        height: 100%;
+        font-size: 15vw;
+
+    }
+    #elem-2-desc{ 
+        font-size: 7vw;         
+    }
+    #elem-2-scroll-msg{
+ 
+        font-size: 3.5vw;
+       
+        
     }
 }
 @media(min-width:481px) and (max-width:768px){ /*for medium screen devices (tablets) */
@@ -245,18 +290,23 @@ body{
     #elem-2 , #elem-3{
         width:45%;
     }
-    #elem-3 h5{
-        font-size: 1.1rem;
+    #elem-2-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #elem-3-title{
+        font-size: 2vw;
     }
     #elem-3 p{
-        font-size: 0.85rem;
+        font-size: 1.7vw;
+    }
+    #elem-2-scroll-msg{
+        font-size: 1.5vw ;
     }
 }
-@media(min-width:769px){ /*for large screen devices (laptops, desktops) */
-    #elem-2 h1{
-        /* width: 50%; */
-    } 
-}
+
 
 /* -------------------------------------------head title section------------------------------------------------ */
 #head-title-div{
@@ -272,7 +322,7 @@ body{
     justify-content: center;
     align-items: center;
     /* overflow:hidden; */
-    /* line-height: 60vh; */
+    
 }
 #head-title-div h1{
     height:100%;
