@@ -29,19 +29,22 @@ body{
     color: #1d1d1b;
     letter-spacing: -.02em;
     font-family: Editorial New,sans-serif;
-    background-color: #C5BDB3;
+    background-color: #0a0a0a;
     font-weight: 300;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
 }
 #main{
-    width:100%;    
+    /* width:100%;  */
+       
     position: relative;
 }
 #page-1{
     width:100%;
+    background-color: #C5BDB3;
     
 }
+/* ---------------------------------------------------page-1----------------------------------------------------- */
 
 /* ----------------------------------------------navbar section------------------- */
 
@@ -311,8 +314,8 @@ body{
 /* -------------------------------------------head title section------------------------------------------------ */
 #head-title-div{
     width:95%;
-    height: 85vh;
-    padding: 5vh 5vw;
+    aspect-ratio: 16/5;
+    /* padding: 5vh 5vw; */
     background-color: #1C1C1A;
     color: #C6BEB4;
     font-family: canopee;
@@ -325,30 +328,31 @@ body{
     
 }
 #head-title-div h1{
-    height:100%;
-    width:100%;
+    height:90%;
+    width:90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28rem;
+    font-size: 30vw;
+    padding-top: 5vh;
 }
 
-#test{
-    border-top: 30px solid #C5BDB3;
-    width:95%;
-    aspect-ratio: 16/5;
-    background-color: #1C1C1A;
-    color: #C6BEB4;
-    font-family: canopee;
-    font-weight: 100;
-    margin:0 auto;
-    display:flex;
+
+/* ----------------------------------------------------------------page-2------------------------------------ */
+#page-2{
+    width:100%;
+    height:100vh;
+    background-color: #C5BDB3; ;
+}
+#page-2 h1{
+    width:98%;
+    height:30vh;
+    font-size: 5vw;
+    border:1px solid  black;
+    margin: 10vh auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80vw;
+
 }
-@media(max-width:767px){
-    /* #test{
-        aspect-ratio: 5/16;
-    } */
-}
+
