@@ -1,5 +1,5 @@
 # The-Canvas-Luxe
-Art Gallery
+A digital Art Gallery
 
 
 <strong>Learnings & Mistakes</strong>
