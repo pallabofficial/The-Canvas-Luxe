@@ -3,7 +3,7 @@ A digital Art Gallery
 
 
 <strong>Learnings & Mistakes</strong>
-1. Responsivenes:-
+1. Responsiveness:-
    • do not set the font sizes in 'rem' or 'em' units, try to use 'vw', this will grow or shrink the font according to the screen size
 
 2. Containers:-
