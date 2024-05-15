@@ -1,4 +1,4 @@
-# The-Canvas-Luxe
+# The-Canvas-Lux
 A digital Art Gallery
 
 
